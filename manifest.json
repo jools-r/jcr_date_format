@@ -1,0 +1,9 @@
+{
+    "version": "0.1",
+    "type": 0,
+    "order": 5,
+    "author": "jcr \/ txpbuilders",
+    "author_uri": "http:\/\/txp.builders\/",
+    "description": "Custom date formatter for events",
+    "flags": 0
+}
