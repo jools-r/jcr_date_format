@@ -77,12 +77,12 @@ if (txpinterface === 'public') {
         }
 
         // output cases
-        if ($start_is_in_past) {
-            // until end date
-            $out = $until . ' ' . safe_strftime($end_format, $end);
-        } else if ($start_equals_end) {
+        if ($start_equals_end) {
             // one-day event: just the date
             $out = safe_strftime($end_format, $begin);
+        } else if ($start_is_in_past) {
+            // until end date
+            $out = $until . ' ' . safe_strftime($end_format, $end);
         } else {
             // multi-day event formated from-to date
             $out = safe_strftime($start_format, $begin) .
