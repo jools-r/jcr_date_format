@@ -59,7 +59,7 @@ if (txpinterface === 'public') {
 
 
         // string formatting
-        $end_format = $concise ? '%e.%m.%Y' : '%e.&#160;%b&#160;%Y';
+        $end_format = $concise ? '%e.%m.%y' : '%e.&#160;%b&#160;%Y';
 
         // if same year
         if (safe_strftime('%G', $begin) == safe_strftime('%G', $end)) {
